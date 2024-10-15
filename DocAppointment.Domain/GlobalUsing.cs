@@ -6,3 +6,4 @@ global using System.Threading.Tasks;
 global using System.ComponentModel.DataAnnotations;
 global using DocAppointment.Domain.Common;
 global using System.Linq.Expressions;
+global using DocAppointment.Domain.Entities.Doctor;

@@ -4,3 +4,6 @@ global using System.Linq;
 global using System.Text;
 global using System.Threading.Tasks;
 global using System.ComponentModel.DataAnnotations;
+global using DocAppointment.Application.Interfaces;
+global using DocAppointment.Domain.Persistence.Contracts;
+
