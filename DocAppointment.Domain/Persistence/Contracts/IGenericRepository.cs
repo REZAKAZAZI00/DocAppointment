@@ -1,5 +1,4 @@
-﻿
-namespace DocAppointment.Domain.Persistence.Contracts;
+﻿namespace DocAppointment.Domain.Persistence.Contracts;
 public interface IGenericRepository<TEntity> where TEntity : class
 {
     IQueryable<TEntity> Table { get; }
