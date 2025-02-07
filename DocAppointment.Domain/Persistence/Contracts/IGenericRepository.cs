@@ -13,7 +13,7 @@ public interface IGenericRepository<TEntity> where TEntity : class
     Task DeleteRangeAsync(IEnumerable<TEntity> entities, CancellationToken cancellation);
     TEntity GetById(params object[] ids);
     Task<TEntity> GetByIdAsync(CancellationToken cancellationToken, params object[] ids);
-    TEntity Get(Expression<Func<TEntity, TEntity>> code);
+    TEntity Get(Expression<Func<TEntity,bool>> code);
     void Update(TEntity entity);
     Task UpdateAsync(TEntity entity, CancellationToken cancellationToken);
 }

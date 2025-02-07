@@ -13,15 +13,15 @@ public class DoctorQueryHandler : IRequestHandler<LoginQuery, bool>
         _doctorRepository = doctorRepository;
     }
 
-    public async Task<bool> Handle(LoginQuery request, CancellationToken cancellationToken)
-    {
-        return false;
-    }
-
-
+   
     #endregion
 
+    public async Task<bool> Handle(LoginQuery request, CancellationToken cancellationToken)
+    {
+        var doctor=_doctorRepository.TableNoTracking.Any(d=> d.Email == request.Email);
 
+        return doctor;
+    }
 
 
 }

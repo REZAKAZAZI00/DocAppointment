@@ -11,3 +11,4 @@ global using Microsoft.EntityFrameworkCore;
 global using DocAppointment.Domain.Entities.Doctor;
 global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.DependencyInjection;
+global using System.Reflection;
